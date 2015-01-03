@@ -1,0 +1,10 @@
+{
+  "name": "zefti-redis",
+  "description": "Redis wrapper",
+  "author": "Ryan Ogle",
+  "dependencies": {
+    "redis" : "latest"
+  },
+  "private": false,
+  "version": "0.0.1"
+}
