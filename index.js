@@ -1,9 +1,10 @@
 var redis = require("redis");
 
 var init = function(options){
+  var dataSource = options.dataSource;
   var args = [];
-  if (options.port) args.push(options.port);
-  if (options.host) args.push(options.host);
+  if (dataSource.port) args.push(dataSource.port);
+  if (dataSource.host) args.push(dataSource.host);
   var client = redis.createClient.apply(redis.createClient, args);
   return client;
 }
