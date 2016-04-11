@@ -7,6 +7,6 @@ var init = function(options){
   if (dataSource.host) args.push(dataSource.host);
   var client = redis.createClient.apply(redis.createClient, args);
   return client;
-}
+};
 
 module.exports = init;
